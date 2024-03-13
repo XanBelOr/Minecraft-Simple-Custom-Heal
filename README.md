@@ -3,7 +3,7 @@ Super simple custom heal library for Minecraft datapacks.
 
 # How to use
 It's really simple!
-1. Make sure somewhere in your datapack's load function, you call `custom_healing:load` so the scores can be initialized
+1. Make sure somewhere in your datapack's load function, you call `custom_heal:load` so the scores can be initialized
 2. Set a player's `c.heal` score to your desired heal amount (scaled by 10,000, so 10,000 = 1 HP healed.)
 3. Call `custom_heal:apply_heal` as the player being healed
 And that's it! The player will be healed by your specified amount.
