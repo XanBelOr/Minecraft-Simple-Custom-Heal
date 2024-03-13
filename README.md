@@ -10,7 +10,9 @@ It's really simple!
 And that's it! The player will be healed by your specified amount.
 
 # Downloads
+
 Use this release for before snapshot 24w09a: https://github.com/XanBelOr/Minecraft-Simple-Custom-Heal/releases/tag/V1.0
+
 Use this release for snapshot 24w09a and later: https://github.com/XanBelOr/Minecraft-Simple-Custom-Heal/releases/tag/V1.1
 
 # Why?
