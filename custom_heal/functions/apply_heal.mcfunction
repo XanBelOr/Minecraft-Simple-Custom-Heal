@@ -1,6 +1,6 @@
 # get max health and current health
 scoreboard players operation @s c.actual_heal += @s c.heal
-attribute @s minecraft:generic.max_health modifier remove 019-1193-66-723-69420
+attribute @s minecraft:generic.max_health modifier remove custom_heal:108158379
 execute store result score #c.max_health c.heal run attribute @s minecraft:generic.max_health get 10000
 execute store result score #c.current_health c.heal run data get entity @s Health 10000
 
