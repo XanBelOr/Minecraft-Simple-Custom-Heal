@@ -18,5 +18,6 @@ execute store result storage custom_heal:amount amount.x double -0.0001 run scor
 function custom_heal:set_hp with storage custom_heal:amount amount
 
 #heal the health then prepare to remove the attribute modifier
+advancement revoke @s only custom_heal:reset_heal
 effect give @s minecraft:instant_health 1 28 true
 scoreboard players set @s c.custom_healed 1
