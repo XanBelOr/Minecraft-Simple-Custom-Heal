@@ -10,10 +10,11 @@ It's really simple!
 And that's it! The player will be healed by your specified amount.
 
 # Why?
-Custom amounts of healing for players isn't supported by default, so it must be done using other methods.
-This uses the tried and true trick of reducing the player's max health, giving instant_health, then setting it back.
-This library is lightweight but still effective. Since the instant_health effect doesn't process at the same time as
-when functions are called, older methods had to wait until the next tick to remove the attribute modifier or it wouldn't work correctly.
-That could (albeit uncommonly) cause some minor issues. This one instead uses an advancment to detect exactly
-when the instant_health effect is removed, eliminating the need for a ticking command and allowing it
-to do everything completely subtick! (Within the same tick.)
+
+Minecraft doesn’t natively support custom healing amounts for players, requiring alternative methods to achieve precise healing.
+
+This library leverages a well-established technique: temporarily reducing the player’s max health, applying the Instant Health effect, and then restoring the original max health.
+
+A key improvement over older methods is how it detects when the Instant Health effect is removed. Previously, systems relied on a next-tick delay to safely restore max health, which could occasionally cause minor issues. Instead, this approach uses an advancement-based trigger, allowing the entire process to complete within the same tick—eliminating the need for a ticking command and ensuring fully subtick-accurate healing.
+
+This makes the system lightweight, precise, and efficient.
